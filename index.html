@@ -10,6 +10,29 @@
     <h1 id="rubrik">Välkommen till min hemsida</h1>
     <p>Jag heter Jack och Thomas visar mig lite om att koda för nätet.</p>
     <button id="knapp">Klicka mig</button>
+
+    <h2>Tic-Tac-Toe Spel</h2>
+    <div id="status">Nuvarande spelare: X</div>
+
+    <div id="board" class="board">
+        <div class="row">
+            <div class="cell" onclick="makeMove(this, 0, 0)"></div>
+            <div class="cell" onclick="makeMove(this, 0, 1)"></div>
+            <div class="cell" onclick="makeMove(this, 0, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" onclick="makeMove(this, 1, 0)"></div>
+            <div class="cell" onclick="makeMove(this, 1, 1)"></div>
+            <div class="cell" onclick="makeMove(this, 1, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" onclick="makeMove(this, 2, 0)"></div>
+            <div class="cell" onclick="makeMove(this, 2, 1)"></div>
+            <div class="cell" onclick="makeMove(this, 2, 2)"></div>
+        </div>
+    </div>
+    <button id="resetButton" onclick="resetGame()">Återställ Spel</button>
+
     <script src="app.js"></script>
   </body>
 </html>
